@@ -136,4 +136,5 @@ def delete_msg():
     return jsonify({'status':'ok'})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Keep debug only for local testing
+    app.run(debug=True, host='0.0.0.0', port=5000)
